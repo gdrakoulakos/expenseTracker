@@ -6,6 +6,7 @@ export const expenses: Expense[] = [
     category: 'Rent',
     amount: 500,
     date: '2025-04-01',
+    paid: true,
     note: 'Monthly rent',
   },
   {
@@ -13,6 +14,7 @@ export const expenses: Expense[] = [
     category: 'Groceries',
     amount: 250,
     date: '2025-04-05',
+    paid: true,
     note: 'Weekly grocery run',
   },
   {
@@ -20,6 +22,7 @@ export const expenses: Expense[] = [
     category: 'Bills',
     amount: 150,
     date: '2025-04-07',
+    paid: false,
     note: 'Electricity + Internet',
   },
   {
@@ -27,6 +30,7 @@ export const expenses: Expense[] = [
     category: 'Transport',
     amount: 27,
     date: '2025-04-10',
+    paid: true,
     note: 'Metro card top-up',
   },
   {
@@ -34,6 +38,7 @@ export const expenses: Expense[] = [
     category: 'Others',
     amount: 10,
     date: '2025-04-12',
+    paid: true,
     note: 'Coffee and snacks',
   },
   {
@@ -41,6 +46,7 @@ export const expenses: Expense[] = [
     category: 'Others',
     amount: 200,
     date: '2025-04-13',
+    paid: false,
     note: 'Life Insurance'
   }
 ];

@@ -13,6 +13,7 @@ export default function ExpenseTable({ expenses }: Props) {
           <th>Category</th>
           <th>Amount</th>
           <th>Date</th>
+          <th>Paid</th>
           <th>Note</th>
         </tr>
       </thead>
@@ -22,9 +23,20 @@ export default function ExpenseTable({ expenses }: Props) {
             <td>{exp.category}</td>
             <td>{exp.amount.toFixed(2)}€</td>
             <td>{exp.date}</td>
+            <td>{exp.paid ? "OK" : "Pending"}</td>
             <td>{exp.note}</td>
           </tr>
         ))}
+        <tr className={styles.bodyRow}>
+          <td>
+            <strong>Total</strong>
+          </td>
+          <td>
+            <strong>
+              {expenses.reduce((sum, exp) => sum + exp.amount, 0).toFixed(2)}€
+            </strong>
+          </td>
+        </tr>
       </tbody>
     </table>
   );
