@@ -4,7 +4,7 @@ export const expenses: Expense[] = [
   {
     id: '1',
     category: 'Rent',
-    amount: 1200,
+    amount: 500,
     date: '2025-04-01',
     note: 'Monthly rent',
   },
@@ -18,22 +18,29 @@ export const expenses: Expense[] = [
   {
     id: '3',
     category: 'Bills',
-    amount: 90,
+    amount: 150,
     date: '2025-04-07',
     note: 'Electricity + Internet',
   },
   {
     id: '4',
     category: 'Transport',
-    amount: 60,
+    amount: 27,
     date: '2025-04-10',
     note: 'Metro card top-up',
   },
   {
     id: '5',
     category: 'Others',
-    amount: 30,
+    amount: 10,
     date: '2025-04-12',
     note: 'Coffee and snacks',
   },
+  {
+    id:'6',
+    category: 'Others',
+    amount: 200,
+    date: '2025-04-13',
+    note: 'Life Insurance'
+  }
 ];
